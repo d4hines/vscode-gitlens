@@ -27,7 +27,7 @@ import type { SearchGitCommandArgs } from './git/search';
 import type { ShowGitCommandArgs } from './git/show';
 import type { StashGitCommandArgs } from './git/stash';
 import type { StatusGitCommandArgs } from './git/status';
-import type { SwitchGitCommandArgs } from './git/switch';
+import type { MarkAsNotJuicyCommandArgs, SwitchGitCommandArgs } from './git/switch';
 import type { TagGitCommandArgs } from './git/tag';
 import type { WorktreeGitCommandArgs } from './git/worktree';
 import { PickCommandStep } from './gitCommands.utils';
@@ -61,6 +61,7 @@ export type GitCommandsCommandArgs =
 	| StashGitCommandArgs
 	| StatusGitCommandArgs
 	| SwitchGitCommandArgs
+    | MarkAsNotJuicyCommandArgs
 	| TagGitCommandArgs
 	| WorktreeGitCommandArgs;
 

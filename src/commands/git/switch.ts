@@ -47,6 +47,11 @@ export interface SwitchGitCommandArgs {
 	state?: Partial<State>;
 }
 
+export interface MarkAsNotJuicyCommandArgs {
+    readonly command: 'notjuicy';
+	state?: Partial<State>;
+}
+
 export class SwitchGitCommand extends QuickCommand<State> {
 	constructor(container: Container, args?: SwitchGitCommandArgs) {
 		super(container, 'switch', 'switch', 'Switch Branch', {
